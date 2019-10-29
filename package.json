@@ -1,0 +1,23 @@
+{
+  "name": "darioclarke95.github.io",
+  "version": "1.0.0",
+  "description": "Home page for my git pages site",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darioclarke95/darioclarke95.github.io.git"
+  },
+  "author": "Dario Clarke",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/darioclarke95/darioclarke95.github.io/issues"
+  },
+  "homepage": "https://github.com/darioclarke95/darioclarke95.github.io#readme",
+
+  "scripts" : {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch assets/scss -o assets/css"
+  }
+}
