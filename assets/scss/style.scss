@@ -1,5 +1,40 @@
 /*This is the main stylesheet for if scripts are enabled*/
 
-h1 {
-  color: #FFF;
+@mixin reset {
+  margin:0;
+  padding:0;
+}
+
+body {
+  @include reset;
+}
+
+#bg {
+  height: 100vh;
+  width:100%;
+  background: grey url('../../images/bg.jpg') no-repeat fixed center;
+  position:absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  @include reset;
+  transform: scale(1.0);
+
+  &::before, &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &::before{
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.3);
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
