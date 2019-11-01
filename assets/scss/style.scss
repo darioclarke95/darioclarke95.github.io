@@ -5,6 +5,15 @@
   padding:0;
 }
 
+@mixin center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
 body {
   @include reset;
 }
@@ -32,7 +41,7 @@ body {
 
   &::before{
     z-index: -1;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.1);
     background-size: auto;
     background-position: center;
     background-repeat: no-repeat;
@@ -40,8 +49,8 @@ body {
 }
 
 #header {
-  margin: auto;
-  height: 50vh;
-  width: 60vw;
-
+  height: 70vh;
+  width: 80vw;
+  color: white;
+  @include center;
 }
