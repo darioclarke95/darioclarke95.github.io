@@ -61,11 +61,11 @@ body {
   #header nav {
     overflow: hidden;
     margin: auto;
-    margin-top: 3vh;
+    margin-top: 7vh;
     width: 72.5vw;
     border-radius: 15px;
     border: 2px solid white;
-    margin-bottom: 3vh; }
+    margin-bottom: 7vh; }
     #header nav a {
       font-family: Courier New, Lucida Console, Lucida Sans Typewriter, Monaco, sans-serif;
       float: left;
@@ -106,3 +106,5 @@ body {
       width: 20vw;
       line-height: 5vh;
       border: 2px solid white; }
+      #header #links a:hover {
+        background-color: rgba(255, 255, 255, 0.1); }
