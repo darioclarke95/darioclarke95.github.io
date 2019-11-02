@@ -41,7 +41,7 @@ body {
 
   &::before{
     z-index: -1;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(5, 5, 5, 0.85);
     background-size: auto;
     background-position: center;
     background-repeat: no-repeat;
@@ -49,8 +49,70 @@ body {
 }
 
 #header {
-  height: 70vh;
+  height: auto;
   width: 80vw;
   color: white;
   @include center;
+
+  .bio {
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    padding-top: 1vh;
+    padding-bottom: 2vh;
+  }
+
+  h1 {
+    text-transform: capitalize;
+    font-family: Courier New, Lucida Console, Lucida Sans Typewriter, Monaco, sans-serif;
+    text-align: center;
+    font-size: 5vw;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+    font-weight: 600;
+    letter-spacing: 0.5vw;
+  }
+
+  p {
+    font-family: Courier New, Lucida Console, Lucida Sans Typewriter, Monaco, sans-serif;
+    font-size:  1.5vw;
+    font-weight: lighter;
+    letter-spacing: 0.125vw;
+  }
+
+  nav {
+    overflow: hidden;
+    margin: auto;
+    margin-top: 3vh;
+    width: 72.5vw;
+    border-radius: 15px;
+    border: 2px solid white;
+
+    a {
+      font-family: Courier New, Lucida Console, Lucida Sans Typewriter, Monaco, sans-serif;
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 1.5vw;
+      letter-spacing: 0.125vw;
+      height: 7vh;
+      width: 24vw;
+      line-height: 7vh;
+
+      &:hover {
+        background-color: rgba(255,255,255,0.1);
+      }
+    }
+
+    #middle {
+      border-left: 2px solid white;
+      border-right: 2px solid white;
+    }
+  }
+
+  #links {
+
+  }
 }
