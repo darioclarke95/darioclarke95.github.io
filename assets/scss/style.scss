@@ -14,6 +14,12 @@
   transform: translate(-50%, -50%);
 }
 
+@mixin nav-link {
+
+}
+
+$font-family: Courier New, Lucida Console, Lucida Sans Typewriter, Monaco, sans-serif;
+
 body {
   @include reset;
 }
@@ -63,7 +69,7 @@ body {
 
   h1 {
     text-transform: capitalize;
-    font-family: Courier New, Lucida Console, Lucida Sans Typewriter, Monaco, sans-serif;
+    font-family: $font-family;
     text-align: center;
     font-size: 5vw;
     margin-top: 1vh;
@@ -73,7 +79,7 @@ body {
   }
 
   p {
-    font-family: Courier New, Lucida Console, Lucida Sans Typewriter, Monaco, sans-serif;
+    font-family: $font-family;
     font-size:  1.5vw;
     font-weight: lighter;
     letter-spacing: 0.125vw;
@@ -86,9 +92,10 @@ body {
     width: 72.5vw;
     border-radius: 15px;
     border: 2px solid white;
+    margin-bottom: 3vh;
 
     a {
-      font-family: Courier New, Lucida Console, Lucida Sans Typewriter, Monaco, sans-serif;
+      font-family: $font-family;
       float: left;
       display: block;
       color: white;
@@ -113,6 +120,30 @@ body {
   }
 
   #links {
+    overflow: hidden;
+    margin: auto;
+    width: 60vw;
 
+    .table-cell {
+      display: table-cell;
+      width: 30vw;
+      padding:0 5vw 0 5vw;
+    }
+
+    a{
+      font-family: $font-family;
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 1.25vw;
+      letter-spacing: 0.125vw;
+      height: 5vh;
+      width: 20vw;
+      line-height: 5vh;
+      border: 2px solid white;
+    }
   }
 }
